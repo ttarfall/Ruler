@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RulerView">
+        <!-- 刻度尺类型 2，8,10,16进制 -->
+        <attr name="ruler_type" format="enum">
+            <enum name="hex_2" value="0x0" />
+            <enum name="hex_8" value="0x1" />
+            <enum name="hex_10" value="0x2" />
+            <enum name="hex_16" value="0x3" />
+        </attr>
+        <!-- 刻度尺mode-->
+        <attr name="ruler_mode" format="enum">
+            <enum name="INTEGER" value="0x0" />
+            <enum name="FLOAT" value="0x1" />
+        </attr>
+        <!-- 刻度间距 -->
+        <attr name="ruler_unit_spacing" format="dimension" />
+        <!-- 单位长度代表数值 -->
+        <attr name="ruler_unit_legend" format="float" />
+        <!-- legend 字体颜色-->
+        <attr name="ruler_unit_legend_text_color" format="color" />
+        <!-- legend 文字大小 -->
+        <attr name="ruler_unit_legend_text_size" format="dimension" />
+        <!--单位长度视图宽度 -->
+        <attr name="ruler_unit_legend_width" format="dimension" />
+        <!--单位长度视图高度 -->
+        <attr name="ruler_unit_legend_height" format="dimension" />
+        <!-- 单位长度的可见性 -->
+        <attr name="ruler_unit_legend_visibility" format="enum">
+            <enum name="visible" value="0x0" />
+            <enum name="gone" value="0x1" />
+            <enum name="invisible" value="0x2" />
+        </attr>
+        <!-- 刻度标记文字和标记的距离 -->
+        <attr name="ruler_unit_legend_margin" format="dimension" />
+        <!-- 单位长度对齐方式  -->
+        <attr name="ruler_unit_legend_gravity" format="enum">
+            <enum name="left" value="0x0" />
+            <enum name="center" value="0x1" />
+            <enum name="right" value="0x2" />
+        </attr>
+        <!-- 一级刻度宽度 -->
+        <attr name="ruler_unit_width" format="dimension" />
+        <!-- 一级刻度高度 -->
+        <attr name="ruler_unit_height" format="dimension" />
+        <!-- 一级刻度颜色 -->
+        <attr name="ruler_unit_color" format="color" />
+        <!-- 二级刻度宽度 不超过  一级刻度宽度 -->
+        <attr name="ruler_unit_mid_width" format="dimension" />
+        <!-- 二级刻度高度 不超过  一级刻度高度 -->
+        <attr name="ruler_unit_mid_height" format="dimension" />
+        <!-- 二级刻度颜色 -->
+        <attr name="ruler_unit_mid_color" format="color" />
+        <!-- 三级刻度宽度 不超过 二级刻度宽度 -->
+        <attr name="ruler_unit_min_width" format="dimension" />
+        <!-- 三级刻度高度 不超过 二级刻度高度 -->
+        <attr name="ruler_unit_min_height" format="dimension" />
+        <!-- 三级刻度颜色 -->
+        <attr name="ruler_unit_min_color" format="color" />
+        <!-- 最小可见刻度数量 -->
+        <attr name="ruler_unit_min_num" format="integer" />
+        <!-- 其实刻度值 -->
+        <attr name="ruler_unit_start_num" format="integer" />
+        <!-- 结束刻度值 -->
+        <attr name="ruler_unit_end_num" format="integer" />
+        <!-- 刻度对齐方式 -->
+        <attr name="ruler_gravity" format="enum">
+            <enum name="left" value="0x1" />
+            <enum name="top" value="0x2" />
+            <enum name="right" value="0x3" />
+            <enum name="bottom" value="0x4" />
+        </attr>
+        <!-- 字体大小 -->
+        <attr name="ruler_text_size" format="dimension" />
+        <!-- 刻度尺文字颜色 -->
+        <attr name="ruler_text_color" format="color" />
+        <!-- 刻度尺上文字的高度 -->
+        <attr name="ruler_text_height" format="dimension" />
+        <!-- 二级刻度文字可见性 -->
+        <attr name="ruler_unit_text_visibility" format="enum">
+            <enum name="visible" value="0x0" />
+            <enum name="gone" value="0x1" />
+            <enum name="invisible" value="0x2" />
+        </attr>
+        <!-- 刻度尺文字与刻度之间的间距 -->
+        <attr name="ruler_unit_text_spacing" format="dimension" />
+        <!-- 标记 -->
+        <attr name="ruler_mark" format="reference" />
+        <!-- 标记颜色 仅仅当标记是path路径时生效 -->
+        <attr name="ruler_mark_color" format="color" />
+        <!-- 标记的宽度 -->
+        <attr name="ruler_mark_width" format="dimension" />
+        <!-- 标记的高度 -->
+        <attr name="ruler_mark_height" format="dimension" />
+        <!-- 水平方向标记颜色 -->
+        <attr name="ruler_mark_h_color" format="color" />
+        <!-- 水平方向标记的宽度 -->
+        <attr name="ruler_mark_h_width" format="dimension" />
+        <!-- 水平方向标记的高度 -->
+        <attr name="ruler_mark_h_height" format="dimension" />
+        <!-- 水平线的颜色 -->
+        <attr name="ruler_horizontal_line_color" format="color" />
+        <!-- 水平线的高度 -->
+        <attr name="ruler_horizontal_line_height" format="dimension" />
+        <!-- 刻度尺默认偏移量 -->
+        <attr name="ruler_unit_offset" format="float" />
+
+    </declare-styleable>
+</resources>
